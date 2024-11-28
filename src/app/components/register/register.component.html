@@ -1,0 +1,9 @@
+<div id="registerDiv">
+    Email: <input type="text" [(ngModel)] = "email"><br>
+    Username: <input type="text" [(ngModel)] = "username"><br>
+    Password: <input type="password" [(ngModel)] = "password"><br>
+
+    <button (click)="register()">Register</button>
+
+    <div *ngIf="error">{{error}}</div>
+</div>
